@@ -1,0 +1,88 @@
+sent_OG = input("Sentence to Translate: ")
+def morseCodeTranslator(str):
+  low_sent = str.lower()
+  letters = []
+  for char in low_sent:
+    letters.append(char)
+
+  #print(letters)
+  MCode = ""
+  for i in range(len(letters)):
+    if letters[i] =="a":
+      MCode += ".-" + " "
+    elif letters[i] == "b":
+      MCode += "-..." + " "
+    elif letters[i] == "c":
+      MCode += "-.-." + " "
+    elif letters[i] == "d":
+      MCode += "-.." + " "
+    elif letters[i] == "e":
+      MCode +="." + " "
+    elif letters[i] == "f":
+      MCode += "..-." + " "
+    elif letters[i] == "g":
+      MCode += "--." + " "
+    elif letters[i] == "h":
+      MCode += "...." + " "
+    elif letters[i] == "i":
+      MCode += ".." + " "
+    elif letters[i] == "j":
+      MCode += ".---" + " "
+    elif letters[i] == "k":
+      MCode += "-.-" + " "
+    elif letters[i] == "l":
+      MCode += ".-.." + " "
+    elif letters[i] == "m":
+      MCode += "--" + " "
+    elif letters[i] == "n":
+      MCode += "-." + " "
+    elif letters[i] == "o":
+      MCode += "---" + " "
+    elif letters[i] == "p":
+      MCode += ".--." + " "
+    elif letters[i] == "q":
+      MCode += "--.-" + " "
+    elif letters[i] == "r":
+      MCode += ".-." + " "
+    elif letters[i] == "s":
+      MCode += "..." + " "
+    elif letters[i] == "t":
+      MCode += "-" + " "
+    elif letters[i] == "u":
+      MCode += "..-" + " "
+    elif letters[i] == "v":
+      MCode += "...-" + " "
+    elif letters[i] == "w":
+      MCode += ".--" + " "
+    elif letters[i] == "x":
+      MCode += "-..-" + " "
+    elif letters[i] == "y":
+      MCode += "-.--" + " "
+    elif letters[i] =="z":
+      MCode += "--.." + " "
+    elif letters[i] == "1":
+      MCode += ".----" + " "
+    elif letters[i] == "2":
+      MCode += "..---" + " "
+    elif letters[i] == "3":
+      MCode += "...--" + " "
+    elif letters[i] == "4":
+      MCode += "....-" + " "
+    elif letters[i] == "5":
+      MCode += "....." + " "
+    elif letters[i] == "6":
+      MCode += "-...." + " "
+    elif letters[i] == "7":
+      MCode += "--..." + " "
+    elif letters[i] == "8":
+      MCode += "---.." + " "
+    elif letters [i] == "9":
+      MCode += "----." + " "
+    elif letters[i]=="0":
+      MCode += "-----" + " "
+    else: 
+      MCode += "/"
+  return MCode
+
+MTrans = morseCodeTranslator(sent_OG)
+print(MTrans)
