@@ -1,4 +1,3 @@
-
 from pyurbandict import UrbanDict
 
 def get_slanga_definitions(word):
@@ -43,13 +42,18 @@ def main():
             print("Exiting the program. Goodbye!")
             break
         
-        definition, example = get_slanga_definitions(word)
+        definition = get_slanga_definitions(word)
         
         if definition:
             print(f"Word: {word}")
             print(f"Definition: {definition}")
-            print(f"Example: {example}")
-            
+            example = get_slanga_example(word)
+            Q2 = input("Do you want and example: ")
+            Q2.lower()
+            if Q2 == "yes":
+                print(f"Example: {example}")
+            else:
+                print("ok")
             # Translate the definition to Spanish
             translated_definition = translate_definition(definition)
             print(translated_definition)
