@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter.constants import DISABLED, NORMAL
 
 #this is a placeholder library
-library = ["rizz","gyatt", "goon"]
+library = ["rizz","gyatt", "goon", "freddy fazbear"]
 
 prompt = ""
 
@@ -33,9 +33,17 @@ def parse_word_term(statement):
      statement_list = statement.split()
      words_processed = 0
      while words_processed < len(statement_list):
+
           if statement_list[words_processed] in library:
                txt_prompt.insert(tk.END,statement_list[words_processed] + " ",'slang')
                words_processed = words_processed + 1
+          elif words_processed < len(statement_list)-1:
+               if statement_list[words_processed] + " " + statement_list[words_processed + 1] in library:
+                    txt_prompt.insert(tk.END, statement_list[words_processed] + " " + statement_list[words_processed + 1] + " ", 'slang')
+                    words_processed = words_processed + 2
+               else:
+                    txt_prompt.insert(tk.END, statement_list[words_processed] + " ")
+                    words_processed = words_processed + 1
           else:
                txt_prompt.insert(tk.END, statement_list[words_processed] + " ")
                words_processed = words_processed + 1
