@@ -43,11 +43,11 @@ def main():
             break
         
         definition = get_slanga_definitions(word)
-        
+        example = get_slanga_example(word)
         if definition:
             print(f"Word: {word}")
             print(f"Definition: {definition}")
-            example = get_slanga_example(word)
+            #example = get_slanga_example(word)
             Q2 = input("Do you want and example: ")
             Q2.lower()
             if Q2 == "yes":
@@ -62,4 +62,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
