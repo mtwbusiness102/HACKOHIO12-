@@ -3,7 +3,23 @@ from tkinter.constants import DISABLED, NORMAL, CURRENT
 from api_in import main
 
 #this is a placeholder library
-library = ["rizz","gyatt", "goon", "freddy fazbear"]
+library = ['aesthetic', 'bet', 'cap','clout', 'dope', 'extra', 'fam', 'finesse', 'goat', 'hypebeast', 
+            'lit af', 'lowkey', 'mood', 'noob', 'on fleek', 'savage', 'shade', 'slay', 'sus', 'tea', 
+            'vibe', 'w', 'yas', 'zoned out', 'flexing', 'lit', 'looksmaxxing', 'mid', 'rizz', 'ate', 
+            'left no crumbs', 'slayed', 'cringe', 'cringey', 'vibe check', 'hawk tuah', 'catch these hands', 'mewing', 'mog', 'rizzing',
+            'dad lore', 'baby gronk', 'livvy dunne', 'kai cenat', 'bussin', 'gyatt', 'gyat', 'rizzler', 'only in ohio', 
+            'ick', 'winter arc', 'fanum tax', 'caseoh', 'squad', 'glow up', 'snatched', 'periodt', 'bop', 'drip', 
+            'fire', 'ghost', 'hella', 'karen', 'meme', 'ok, boomer', 'pog', 'salty', 'ship', 'szn', 
+            'yeet', 'zoomer', 'goon', 'gooner', 'cap', 'simp', 'zesty', 'freaky', 'diddy', 'thicc', 
+            'gassed', 'gas', 'bae', 'dab', 'feels', 'hot mess', 'kicks', 'rager', 'swole', 
+            'troll', 'l', 'yas queen', 'chillax', 'bussing', 'clapped', 'degen', 'ratchet', 'spicy', 'woke'
+            'dank', 'ghosting', 'meme lord', 'flex', 'highkey', 'goated', 'snack', 'poggers', 'skibbidi', 'brainrot', 
+            'sigma', 'edging' 'edge lord', 'bruh', 'opp', 'twin', 'ohio', 'pookie', 'og', 'sheesh', 
+            'swag', 'dog water', 'yap', 'yapping', 'grimace shake', 'grimace', 'goofy', 'goofy ahh', 'sussy', 'baka', 
+            'ligma', 'griddy', 'devious', 'devious lick', 'brokies', 'alpha', 'beta', 'chug jug', 'preppy', 'ishowspeed', 
+            'ratio', 'ipad kid', 'andrew tate', 'fatherless', 'cook', 'cooking', 'cooked', 'fortnite', 'among us', 'toxic', 
+            'stream', 'camera man', 'ice spice', 'g', 'munch', 'imposter', 'omega', 'male grindset', 'grind', 'freddy fazbear', 
+            'smurf cat', 'blud', 'ocky way', 'bing chilling', 'gigachad', 'glizzy', 'gang', 'ayo', 't-pose']
 key_words = []
 prompt = ""
 

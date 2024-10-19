@@ -16,6 +16,10 @@ def get_slanga_definitions(word):
     else:
         print("none")
         return None
+    
+def remove_square_brackets(input_string):
+    return input_string.replace("[", "").replace("]", "")
+
         
 
 def get_slanga_example(word):
@@ -46,14 +50,20 @@ def main(word):
         example = get_slanga_example(word)
         if definition:
             word1=f"Word: {word}"
+            word1u=remove_square_brackets(word1)
             word2=f"Definition: {definition}"
+            word2u=remove_square_brackets(word2)
             #example = get_slanga_example(word)
             word3=f"Example: {example}"
+            word3u=remove_square_brackets(word3)
             # Translate the definition to Spanish
             translated_definition = translate_definition(definition)
-            return(word1+"\n"+word2+"\n"+word3)
+            return(word1u+"\n"+word2u+"\n"+word3u)
             
         else:
             print(f"No slang definition found for the word: {word}. Please try again.")
             
         break
+    
+
+# Example usage
