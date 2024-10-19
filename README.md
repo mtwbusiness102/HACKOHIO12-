@@ -1,2 +1,2 @@
 # HACKOHIO12
-Hack 12 Repository
+Hack OHIO 12 Repository
