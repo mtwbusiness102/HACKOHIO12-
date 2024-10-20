@@ -1,9 +1,6 @@
 import whisper
 import warnings
 
-
-
-
 def transcriber_words():
     
     warnings.simplefilter(action='ignore', category=FutureWarning)
