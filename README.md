@@ -5,10 +5,10 @@ Our project takes a live audio file and converts it into a text document. From t
 
 Programmers:
 
-mtwbusiness102 - Maverick
+mtwbusiness102 - Maverick Walker
 
-mrushikh - Rishi
+mrushikh - Rushikh Mungara
 
-morrill31 - Andrew
+morrill31 - Andrew Morrill
 
-acuteangle88 - Angel
+acuteangle88 - Angel Luong
